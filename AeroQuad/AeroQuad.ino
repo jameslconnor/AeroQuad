@@ -745,6 +745,10 @@
    * Put AeroQuadMega_CHR6DM specific intialization need here
    */
   void initPlatform() {
+    pinMode(LED_Red, OUTPUT);
+    pinMode(LED_Yellow, OUTPUT);
+    pinMode(LED_Green, OUTPUT);
+    
     Serial1.begin(BAUD);
     PORTD = B00000100;
 
